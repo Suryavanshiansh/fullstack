@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <style>
+        
+        .amount-label { display:block; margin-top:10px; font-weight:600; color:#222; }
+      
+        @media (max-width:420px){ .card { padding:20px 18px; } .balance-heading{font-size:28px;} }
+    </style>
+    <div class="form-container">
+     
+      <div class="card" style="min-width:320px; border:1px solid rgba(0,0,0,0.03);">
+        <h1 class="balance-heading">Elon Musk Balance: Rs <span id="balance">10000000000000000</span></h1>
+        <label for="amount" class="amount-label">Amount</label>
+        <input type="number" id="amount" placeholder="">
+        <div class="buttons">
+          <button type="button" class="button btn-deposit" id="deposit" style="padding-left:22px;padding-right:22px;">Deposit</button> 
+          <button type="button" class="button btn-withdraw" id="withdraw">Withdraw</button>
+        </div>
+        <p id="error" class="error" style="display:none">Invalid amount!</p>
+      </div>
+    </div>
+    <script src="script2.js"></script>"
+</body>
+</html>
