@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            display: inline-block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        const heading = document.createElement('h2');
+        heading.textContent = 'Hello javascript';
+        document.body.appendChild(heading);
+
+       
+        const appendText = document.createTextNode(' from student');
+        heading.appendChild(appendText);
+
+        
+        const boxTexts = ['Box 1: This is the first box', 'Box 2: This is the second box', 'Box 3: This is the third box'];
+
+        boxTexts.forEach((text, index) => {
+            const div = document.createElement('div');
+            div.className = 'box';
+            div.textContent = text;
+            document.body.appendChild(div);
+        });
+    </script>
+</body>
+</html>

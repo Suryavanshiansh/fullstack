@@ -1,0 +1,15 @@
+body{
+    background-color: lightblue;
+}
+#heading{
+    color: brown;
+} 
+.paragraph{
+    font-size: 20px;
+    color: green;
+}  
+.paragraph1{
+    font-size: larger;
+    color: purple;
+
+}
